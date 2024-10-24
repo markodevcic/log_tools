@@ -1,6 +1,6 @@
 name: log_tools
 description: "A Flutter logging package that provides detailed and human-readable logging for complex data structures, including maps and lists. It integrates with Dio interceptors to log network requests, responses, and errors in a customizable and easily readable format, while also offering general-purpose logging throughout the app."
-version: 1.0.2
+version: 1.0.3
 repository: https://github.com/markodevcic/log/tree/main
 
 environment:

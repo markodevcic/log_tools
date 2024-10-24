@@ -10,3 +10,7 @@
 
 * Added info to the readme
 
+## 1.0.3
+
+* Fixed readme image paths
+
