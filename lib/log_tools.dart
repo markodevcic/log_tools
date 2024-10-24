@@ -1,6 +1,7 @@
 library log_tools;
 
 export 'package:log_tools/info/info_utils.dart';
+export 'package:log_tools/log_tools_dio_interceptor/log_tools_dio_interceptor.dart';
 
 /// A logging library for handling HTTP requests and responses using Dio.
 ///

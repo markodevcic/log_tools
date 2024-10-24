@@ -1,9 +1,9 @@
 // test/log_test.dart
 import 'package:flutter_test/flutter_test.dart';
-import 'package:log_tools/log_master.dart';
+import 'package:log_tools/log_tools.dart';
 
 void main() {
-  test('Log.info should format output correctly', () {
+  test('LogTools.info should format output correctly', () {
     // Arrange
     final title = LogToolsInfoTitle(title: 'Test', value: 'Success');
     final body = [LogToolsInfoBody(title: 'Status', value: 'OK')];

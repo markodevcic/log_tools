@@ -1,12 +1,12 @@
 import 'package:dio/dio.dart';
-import 'package:log_tools/log_master.dart';
+import 'package:log_tools/log_tools.dart';
 
 /// A custom Dio interceptor for logging requests and responses.
 ///
 /// This interceptor uses the [LogTools] class to log request and response details,
 /// as well as any errors that occur during the process.
-class DioInterceptor extends Interceptor {
-  /// Creates a new instance of [LogDioInterceptor].
+class LogToolsDioInterceptor extends Interceptor {
+  /// Creates a new instance of [LogToolsDioInterceptor].
   ///
   /// [showRequest]: Whether to show request logs.
   /// [showRequestCurl]: Whether to show the CURL representation of requests.
@@ -16,7 +16,7 @@ class DioInterceptor extends Interceptor {
   /// [showResponseData]: Whether to include response data in the logs.
   /// [showError]: Whether to show error logs.
   /// [showErrorData]: Whether to include error data in the logs.
-  DioInterceptor({
+  LogToolsDioInterceptor({
     this.showRequest = true,
     this.showRequestCurl = true,
     this.showRequestData = true,

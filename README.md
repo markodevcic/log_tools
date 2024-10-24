@@ -11,19 +11,19 @@ A customizable Flutter package with built-in support for Dio interceptors, enabl
 - Pretty-print JSON data for easy readability.
 - Optionally log requests and responses as cURL commands.
 - Colored logs for better distinction between request types and errors.
-- General-purpose logging with `Log.info()` to format and log complex lists and maps.
+- General-purpose logging with `LogTools.info()` to format and log complex lists and maps.
 
 ## Usage
 
-### 1. Pretty-printing Complex Data with `Log.info()`
-The `Log.info()` function allows you to print human-readable and formatted logs of any data in your app, making it especially useful for complex lists or maps.
+### 1. Pretty-printing Complex Data with `LogTools.info()`
+The `LogTools.info()` function allows you to print human-readable and formatted logs of any data in your app, making it especially useful for complex lists or maps.
 
 ```dart
-Log.info(
-  title: LogInfoTitle(title: 'User Data', value: 'List of Users'),
+LogTools.info(
+  title: LogToolsInfoTitle(title: 'User Data', value: 'List of Users'),
   body: [
-    LogInfoBody(title: 'User 1', value: {'name': 'Alice', 'age': 30}),
-    LogInfoBody(title: 'User 2', value: {'name': 'Bob', 'age': 25}),
+    LogToolsInfoBody(title: 'User 1', value: {'name': 'Alice', 'age': 30}),
+    LogToolsInfoBody(title: 'User 2', value: {'name': 'Bob', 'age': 25}),
   ],
 );
 ```
@@ -34,14 +34,14 @@ This will output:
 
 ### 2. Adding the Dio Interceptor to Log Network Requests
 
-You can use the `LogDioInterceptro` to log all network traffic through Dio, with options to customize the verbosity of the logs.
+You can use the `LogToolsDioInterceptor` to log all network traffic through Dio, with options to customize the verbosity of the logs.
 
 ```dart
 import 'package:dio/dio.dart';
-import 'package:your_package_name/log_dio_interceptor.dart';
+import 'package:log_tools/log_tools.dart';
 
 final dio = Dio();
-dio.interceptors.add(LogDioInterceptro(
+dio.interceptors.add(LogToolsDioInterceptor(
   showRequest: true,
   showRequestCurl: true,
   showRequestData: true,
@@ -55,11 +55,11 @@ dio.interceptors.add(LogDioInterceptro(
 
 ### 3. Logging Options
 
-#### Log.info():
-- `LogInfoTitle`: The title and optional value displayed in the log header.
-- `LogInfoBody`: A list of key-value pairs (maps, lists, etc.) to be pretty-printed.
+#### LogTools.info():
+- `LogToolsInfoTitle`: The title and optional value displayed in the log header.
+- `LogToolsInfoBody`: A list of key-value pairs (maps, lists, etc.) to be pretty-printed.
 
-#### LogDioInterceptro:
+#### LogToolsDioInterceptor:
 - `showRequest`: Logs HTTP requests.
 - `showRequestCurl`: Logs the request as a cURL command.
 - `showRequestData`: Logs request body data.
@@ -75,7 +75,7 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  log: ^0.0.1
+  log_tools: ^1.0.0
 ```
 
 Then, run `flutter pub get` to install the package.
