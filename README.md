@@ -1,7 +1,13 @@
 
-# log_package
+# Log Tools
 
 A customizable Flutter package with built-in support for Dio interceptors, enabling detailed logging for network requests, responses, and errors. The package is designed to assist developers in monitoring their API interactions effectively with options to control the verbosity of logs.
+
+**Note:** This package is specifically designed for optimal use with **VSCode**. 
+
+While the logging functionality will still work in other IDEs, some may not fully support the color-coded ANSI escape sequences used to enhance log readability. These color codes may not render correctly in IDEs other than VSCode, leading to non-readable logs with visible escape sequences.
+
+However, all log messages and data will still be output, just without the intended color formatting
 
 ## Features
 

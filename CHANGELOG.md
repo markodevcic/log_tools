@@ -1,7 +1,8 @@
-## 0.0.1
+## 1.0.0
 
 * Published
 
-## 1.0.0
+## 1.0.1
 
-* Minor fixes
+* Changed class names
+
