@@ -14,3 +14,7 @@
 
 * Fixed readme image paths
 
+## 1.0.4
+
+* Fixed readme
+

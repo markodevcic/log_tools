@@ -7,8 +7,6 @@ A customizable Flutter package with built-in support for Dio interceptors, enabl
 
 While the logging functionality will still work in other IDEs, some may not fully support the color-coded ANSI escape sequences used to enhance log readability. These color codes may not render correctly in IDEs other than VSCode, leading to non-readable logs with visible escape sequences.
 
-However, all log messages and data will still be output, just without the intended color formatting
-
 ## Features
 
 - Log HTTP requests and responses using Dio interceptors.
@@ -22,6 +20,7 @@ However, all log messages and data will still be output, just without the intend
 ## Usage
 
 ### 1. Pretty-printing Complex Data with `LogTools.info()`
+
 The `LogTools.info()` function allows you to print human-readable and formatted logs of any data in your app, making it especially useful for complex lists or maps.
 
 ```dart
@@ -81,7 +80,7 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  log_tools: ^1.0.0
+  log_tools: ^1.0.4
 ```
 
 Then, run `flutter pub get` to install the package.
@@ -91,8 +90,6 @@ Then, run `flutter pub get` to install the package.
 **Request Dio Interceptor Log:**
 
 ![Log Dio Interceptor Request](https://raw.githubusercontent.com/markodevcic/log_tools/main/assets/log_dio_interceptor_request.png)
-
-
 
 **Response Dio Interceptor Log:**
 
