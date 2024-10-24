@@ -36,7 +36,7 @@ LogTools.info(
 
 This will output:
 
-![Pretty-Printed Log Output](assets/pretty_printer_log_output.png)
+![Pretty-Printed Log Output](https://raw.githubusercontent.com/markodevcic/log_tools/main/assets/pretty_printer_log_output.png)
 
 ### 2. Adding the Dio Interceptor to Log Network Requests
 
@@ -90,11 +90,13 @@ Then, run `flutter pub get` to install the package.
 
 **Request Dio Interceptor Log:**
 
-![Log Dio Interceptor Request](assets/log_dio_interceptor_request.png)
+![Log Dio Interceptor Request](https://raw.githubusercontent.com/markodevcic/log_tools/main/assets/log_dio_interceptor_request.png)
+
+
 
 **Response Dio Interceptor Log:**
 
-![Log Dio Interceptor Response](assets/log_dio_interceptor_response.png)
+![Log Dio Interceptor Response](https://raw.githubusercontent.com/markodevcic/log_tools/main/assets/log_dio_interceptor_response.png)
 
 ## Contribution
 
