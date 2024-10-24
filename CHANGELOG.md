@@ -6,3 +6,7 @@
 
 * Changed class names
 
+## 1.0.2
+
+* Added info to the readme
+
