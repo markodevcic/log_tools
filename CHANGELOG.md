@@ -1,5 +1,6 @@
 ## 1.0.6
 
+* Changed logging display name
 * Fixed pubspec.yaml
 
 ## 1.0.5
