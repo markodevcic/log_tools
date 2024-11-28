@@ -47,7 +47,7 @@ ${applyColor('StatusCode:', white)} ${applyColor(dioException.response!.statusCo
 ${applyColor('Headers:', white)} ${applyColor(json.encode(dioException.response?.headers.map), red)}
 ${formattedData != null && showData ? '${applyColor('Data:', white)} $formattedData\n' : ''}
 $reset\n
-""");
+""", name: 'Log Tools');
     }
   }
 
@@ -88,7 +88,7 @@ ${applyColor('Headers:', white)} $formattedHeaders
 ${formattedData != null && showData ? '${applyColor('Date:', white)} $formattedData\n' : ''}
 ${showCurl ? '${curlRepresentation(options)}\n' : ''}
 $reset\n
-""");
+""", name: 'Log Tools');
     }
   }
 
@@ -125,7 +125,7 @@ ${applyColor('Method:', white)} ${applyColor(response.requestOptions.method, cya
 ${formattedData != null && showData ? '${applyColor('Data:', white)} $formattedData\n' : ''}
 ${showCurl ? '${curlRepresentation(response.requestOptions)}\n' : ''}
 $reset\n
-""");
+""", name: 'Log Tools');
     }
   }
 
@@ -154,6 +154,6 @@ $reset\n
 ${'-' * 20}${title != null ? ' ${applyColor(title.title, white)} ' : '--'}${title != null && title.value != null ? '${applyColor(title.value ?? '', cyan)} ' : '-'}${'-' * 20}\n
 ${formattedBody.map((info) => '${info.title != null ? '${applyColor(info.title!, white)}: ' : ''}${info.value}').join('\n')}
 $reset\n
-""");
+""", name: 'Log Tools');
   }
 }
