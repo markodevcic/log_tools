@@ -1,3 +1,7 @@
+## 1.0.6
+
+* Fixed pubspec.yaml
+
 ## 1.0.5
 
 * Fixed repository url
