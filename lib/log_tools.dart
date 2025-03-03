@@ -122,6 +122,7 @@ $reset\n
 ${'-' * 20} ${applyColor('Response', white)} ${applyColor(endpoint, cyan)} ${'-' * 20}\n
 ${applyColor('URL:', white)} ${applyColor(response.requestOptions.uri.toString(), cyan)}
 ${applyColor('Method:', white)} ${applyColor(response.requestOptions.method, cyan)}
+${applyColor('StatusCode:', white)} ${applyColor(response.statusCode.toString(), red)}
 ${formattedData != null && showData ? '${applyColor('Data:', white)} $formattedData\n' : ''}
 ${showCurl ? '${curlRepresentation(response.requestOptions)}\n' : ''}
 $reset\n
