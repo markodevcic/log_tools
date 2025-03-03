@@ -1,6 +1,6 @@
 name: log_tools
 description: "Logging package with detailed and human-readable logging for complex data structurea specifically made to use with Dio interceptors as well as a general purpose logging"
-version: 1.0.6
+version: 1.0.8
 repository: https://github.com/markodevcic/log_tools
 
 environment:

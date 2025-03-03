@@ -43,7 +43,7 @@ class LogTools {
 ${'-' * 20} ${applyColor('Error', white)} ${applyColor(endpoint, red)} ${'-' * 20}\n
 ${applyColor('URL:', white)} ${applyColor(dioException.requestOptions.uri.toString(), red)}\n
 ${applyColor('Method:', white)} ${applyColor(dioException.requestOptions.method, red)} 
-${applyColor('StatusCode:', white)} ${applyColor(dioException.response!.statusCode.toString(), red)}
+${applyColor('Status:', white)} ${applyColor(dioException.response!.statusCode.toString(), red)}
 ${applyColor('Headers:', white)} ${applyColor(json.encode(dioException.response?.headers.map), red)}
 ${formattedData != null && showData ? '${applyColor('Data:', white)} $formattedData\n' : ''}
 $reset\n
@@ -122,7 +122,7 @@ $reset\n
 ${'-' * 20} ${applyColor('Response', white)} ${applyColor(endpoint, cyan)} ${'-' * 20}\n
 ${applyColor('URL:', white)} ${applyColor(response.requestOptions.uri.toString(), cyan)}
 ${applyColor('Method:', white)} ${applyColor(response.requestOptions.method, cyan)}
-${applyColor('StatusCode:', white)} ${applyColor(response.statusCode.toString(), red)}
+${applyColor('Status:', white)} ${applyColor(response.statusCode.toString(), cyan)}
 ${formattedData != null && showData ? '${applyColor('Data:', white)} $formattedData\n' : ''}
 ${showCurl ? '${curlRepresentation(response.requestOptions)}\n' : ''}
 $reset\n

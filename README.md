@@ -80,7 +80,7 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  log_tools: ^1.0.6
+  log_tools: ^1.0.8
 ```
 
 Then, run `flutter pub get` to install the package.
